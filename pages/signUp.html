@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+     <div class="container">
+         <h2 class="header">Sign up</h2>
+         <form action="" class="signUpForm">
+             <div class="form-group">
+                 <input class="signupEmail" type="email" id="registeredMail"
+                  placeholder="Email" required>
+              <img class="emailValid" src="/images/checked.png" width="20px">
+              <img class="emailInvalid" src="/images/x-button.png" width="20px">
+
+             </div>
+             <span class="validEmail"></span>
+             <div class="form-group">
+                 <input type="password" id="firstTime" required
+                 placeholder="Enter password of 6-8 characters long"
+                 minlength="6" maxlength="8">
+                 <img class="firstTime" src="/images/show.png" width="20px">
+             </div>
+             <div class="form-group">
+                 <input type="password" id="confirmedPassword"
+                 placeholder="Confirm password" >
+                 <img class="secondTime" src="/images/show.png" width="20px">
+
+             </div>
+    <div class="doesNotMatch"></div>
+
+             <button type="submit"  id="next">NEXT</button>
+         </form>
+         <span>Already have an account?
+              <a href="login.html" class="hrefLinks">
+                  Login
+              </a>
+        </span>
+     </div>
+
+
+
+     <script src="/js/signUp.js"></script>
+</body>
+</html>
